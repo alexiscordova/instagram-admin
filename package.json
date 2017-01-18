@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "./app/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexiscordova/instagram-admin.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --progress",
     "build": "webpack --optimize-minimize"
