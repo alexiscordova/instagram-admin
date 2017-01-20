@@ -1,0 +1,13 @@
+/**
+ * Typography - A typographic system for the Instagram admin panel
+ */
+
+// TypeKit
+.wf-loading {
+  opacity: 0;
+}
+
+.wf-active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}

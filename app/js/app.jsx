@@ -2,10 +2,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Sass import (FPO)
+// Base CSS Framework
 import '../styles/app.scss';
 
-// React components start with a capital letter
+// Base Application Structure
 function Application() {
   return (
     <h1>Hello, World!</h1>
