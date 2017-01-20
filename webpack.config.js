@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/js/app.js',
+  entry: './app/js/app.jsx',
 
   output: {
     path: path.join(__dirname, 'dist'),
@@ -11,7 +11,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel-loader']
       },
