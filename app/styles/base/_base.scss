@@ -1,0 +1,12 @@
+html {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1;
+  background-color: $gray;
+}
