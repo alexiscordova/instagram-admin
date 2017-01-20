@@ -8,7 +8,7 @@
   },
   "main": "./app/js/app.jsx",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start": "webpack-dev-server --progress --inline --hot",
     "build": "webpack --optimize-minimize"
   },
   "keywords": [],
