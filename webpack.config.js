@@ -13,12 +13,26 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel-loader']
+        loaders: [
+          'react-hot',
+          'babel-loader'
+        ]
       },
 
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        loaders: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+
+      {
+        test: /\.(gif|png|jpe?g|svg)$/,
+        loaders: [
+          'image-webpack'
+        ]
       }
     ]
   }
