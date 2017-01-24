@@ -1,9 +1,10 @@
 // Instagram Admin Panel
 
-@import 'base/colors',
-'base/typography',
-'base/base';
 
-@import 'layout/layout';
+// Base CSS Framework
+@import
+  'layout/typography',
+  'layout/layout';
 
-@import 'utilities/utilities';
+@import
+  'utilities/utilities';

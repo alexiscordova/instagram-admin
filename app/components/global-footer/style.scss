@@ -1,0 +1,46 @@
+// Global Footer
+
+// Import Global Variables
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+
+$copyrightColor: $lightGray;
+
+.global-footer {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    flex: 1 0 auto;
+  }
+
+  .copyright {
+    flex: 1 0 auto;
+    color: $copyrightColor;
+    text-align: right;
+  }
+
+  [role="navigation"] {
+    @extend %unstyled;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
