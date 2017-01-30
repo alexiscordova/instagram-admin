@@ -11,7 +11,7 @@ class GlobalFooter extends React.Component {
           <nav>
             <ul className="small-copy" role="navigation">
               <li>
-                <a href="/about/us/">About us</a>
+                <a href="https://instagram.com/about/us/">About us</a>
               </li>
               <li>
                 <a href="https://help.instagram.com/">Support</a>
@@ -20,22 +20,22 @@ class GlobalFooter extends React.Component {
                 <a href="http://blog.instagram.com/">Blog</a>
               </li>
               <li>
-                <a href="/press/">Press</a>
+                <a href="https://instagram.com/press/">Press</a>
               </li>
               <li>
-                <a href="/developer/">API</a>
+                <a href="https://instagram.com/developer/">API</a>
               </li>
               <li>
-                <a href="/about/jobs/">Jobs</a>
+                <a href="https://instagram.com/about/jobs/">Jobs</a>
               </li>
               <li>
-                <a href="/legal/privacy/">Privacy</a>
+                <a href="https://instagram.com/legal/privacy/">Privacy</a>
               </li>
               <li>
-                <a href="/legal/terms/">Terms</a>
+                <a href="https://instagram.com/legal/terms/">Terms</a>
               </li>
               <li>
-                <a href="/about/directory/">Directory</a>
+                <a href="https://instagram.com/about/directory/">Directory</a>
               </li>
               <li>
                 <a href="#">Language</a>

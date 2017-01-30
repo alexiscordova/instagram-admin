@@ -5,7 +5,7 @@
 @import '../../styles/base/placeholders';
 @import '../../styles/base/typescale';
 
-$copyrightColor: $lightGray;
+$copyright-color: $lightGray;
 
 .global-footer {
   position: relative;
@@ -27,7 +27,7 @@ $copyrightColor: $lightGray;
 
   .copyright {
     flex: 1 0 auto;
-    color: $copyrightColor;
+    color: $copyright-color;
     text-align: right;
   }
 
