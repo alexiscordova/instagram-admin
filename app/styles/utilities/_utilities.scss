@@ -7,8 +7,19 @@
 }
 
 // Layout
-.inline {
+.inline-text {
   display: inline;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.layout-right {
+  display: block;
+  text-align: right;
 }
 
 // Typography
