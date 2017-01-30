@@ -1,0 +1,49 @@
+// Profile Info
+
+// Import Global Variables
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #efefef;
+
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .profile-username {
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    flex: 2;
+
+    .profile-stats {
+      margin-bottom: 20px;
+    }
+
+    .profile-stats ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 50%;
+    }
+
+    [class$='-total'] {
+      color: #262626;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

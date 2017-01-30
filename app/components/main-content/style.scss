@@ -8,46 +8,21 @@
 .content {
   margin: 40px 0;
 
-  .profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px solid $lightGray;
+  // Add spacing within MainContent direct children
+  // but not the first child (as it already has margin-top applied)
+  & > *:not(:first-child) {
+    padding-top: 40px;
+    //padding-bottom: 20px;
+  }
+}
 
-    .profile-photo {
-      display: flex;
-      justify-content: center;
-      flex: 1;
+// Posts
+.posts {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 
-      img {
-        border-radius: 50%;
-      }
-    }
-
-    .profile-username {
-      margin-bottom: 20px;
-    }
-
-    .profile-content {
-      flex: 2;
-
-      .profile-stats {
-        margin-bottom: 20px;
-      }
-
-      .profile-stats ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 50%;
-      }
-
-      [class$='-total'] {
-        color: #262626;
-        font-weight: $font-weight-bold;
-      }
-    }
+  .post-items {
+    margin: 10px 0;
   }
 }
