@@ -24,11 +24,17 @@
   line-height: $line-height-h2;
 }
 
+%headline-3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-h3;
+}
+
 %body-copy {
   margin-bottom: 0;
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
-  line-height: $line-height-h2;
+  line-height: $line-height-h3;
 }
 
 %small-copy {
