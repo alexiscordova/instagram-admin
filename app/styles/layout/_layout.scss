@@ -1,6 +1,7 @@
 // Import Global Variables
 @import '../base/colors';
 @import '../base/placeholders';
+@import '../base/typescale';
 
 $backgroundColor: $gray;
 $linkColor: $blue;
@@ -21,8 +22,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
   line-height: 1;
   background-color: $backgroundColor;
 }
@@ -56,5 +58,6 @@ main {
 a,
 a:visited {
   color: $linkColor;
+  font-weight: $font-weight-bold;
   text-decoration: none;
 }

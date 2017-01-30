@@ -1,6 +1,8 @@
-/**
- * Typography - A typographic system for the Instagram admin panel
- */
+// Typography
+
+@import '../base/colors';
+@import '../base/placeholders';
+@import '../base/typescale';
 
 // TypeKit
 .wf-loading {
@@ -9,5 +11,27 @@
 
 .wf-active {
   opacity: 1;
-  transition: opacity 0.25s ease-in;
+}
+
+// Headlines
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  @extend %headline-1;
+}
+
+h2 {
+  @extend %headline-2;
+}
+
+p {
+  @extend %body-copy;
+  margin-bottom: 0;
+}
+
+small {
+  @extend %small-copy;
 }

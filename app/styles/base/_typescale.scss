@@ -1,0 +1,25 @@
+// Type Scale Variables
+
+// Font Families
+$font-family-sans-serif: 'proxima-nova','Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Body Copy
+$font-size-base: 17px;
+
+// Small Copy
+$font-size-small: 12px;
+
+// Headlines
+$font-size-h1: 34px;
+$font-size-h2: $font-size-base;
+
+// Font Weights
+$font-weight-bold: 600;
+$font-weight-normal: normal;
+$font-weight-light: 300;
+
+// Line Heights
+$line-height-h1: (40px/$font-size-h1);
+$line-height-h2: (24px/$font-size-h2);
+$line-height-base: (14px/$font-size-base);
+$line-height-small: 1;

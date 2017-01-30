@@ -3,6 +3,7 @@
 // Import Global Variables
 @import '../../styles/base/colors';
 @import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
 
 $copyrightColor: $lightGray;
 
@@ -10,8 +11,6 @@ $copyrightColor: $lightGray;
   position: relative;
   z-index: 1;
   margin-bottom: 45px;
-  font-size: 12px;
-  font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
 

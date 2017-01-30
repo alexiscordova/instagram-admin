@@ -9,7 +9,7 @@ class GlobalFooter extends React.Component {
       <footer className="global-footer">
         <div className="wrapper">
           <nav>
-            <ul role="navigation">
+            <ul className="small-copy" role="navigation">
               <li>
                 <a href="/about/us/">About us</a>
               </li>
@@ -75,7 +75,7 @@ class GlobalFooter extends React.Component {
               </li>*/}
             </ul>
           </nav>
-          <span className="copyright">© 2017 Instagram</span>
+          <span className="copyright small-copy">© 2017 Instagram</span>
         </div>
       </footer>
     )
