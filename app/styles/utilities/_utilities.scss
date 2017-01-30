@@ -1,5 +1,29 @@
+@import '../base/placeholders';
+
 .wrapper {
   margin: 0 auto;
   max-width: 935px;
   width: 100%;
+}
+
+// Layout
+.inline {
+  display: inline;
+}
+
+// Typography
+.headline-1 {
+  @extend %headline-1;
+}
+
+.headline-2 {
+  @extend %headline-2;
+}
+
+.body-copy {
+  @extend %body-copy;
+}
+
+.small-copy {
+  @extend %small-copy;
 }

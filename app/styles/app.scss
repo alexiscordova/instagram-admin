@@ -5,6 +5,10 @@
 
 // Base CSS Framework
 @import
+  'base/colors',
+  'base/placeholders';
+
+@import
   'layout/typography',
   'layout/layout';
 
