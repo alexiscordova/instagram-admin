@@ -7,12 +7,18 @@ import './styles/app.scss';
 
 // Import Components
 import GlobalHeader from './components/global-header/index.jsx';
+import MainContent from './components/main-content/index.jsx';
 import GlobalFooter from './components/global-footer/index.jsx';
 
 // Base Application Structure
 export default class Application extends React.Component {
   render() {
     return (
+      <article className="react-root">
+        <GlobalHeader />
+        <MainContent />
+        <GlobalFooter />
+      </article>
     )
   }
 };
