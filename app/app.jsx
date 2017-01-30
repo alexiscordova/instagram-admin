@@ -12,6 +12,10 @@ import GlobalFooter from './components/global-footer/index.jsx';
 
 // Base Application Structure
 export default class Application extends React.Component {
+  componentDidMount() {
+    document.title = '{name} {@username} • Instagram photos and videos';
+  }
+
   render() {
     return (
       <article className="react-root">
