@@ -3,8 +3,8 @@
 @import '../base/placeholders';
 @import '../base/typescale';
 
-$backgroundColor: $gray;
-$linkColor: $blue;
+$background-color: $gray;
+$link-color: $blue;
 
 html {
   position: relative;
@@ -26,7 +26,7 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
   line-height: 1;
-  background-color: $backgroundColor;
+  background-color: $background-color;
 }
 
 #app {
@@ -57,7 +57,7 @@ main {
 // Links
 a,
 a:visited {
-  color: $linkColor;
+  color: $link-color;
   font-weight: $font-weight-bold;
   text-decoration: none;
 }
