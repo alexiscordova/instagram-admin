@@ -1,45 +1,63 @@
 // Global Footer
 
 // Import Global Variables
+@import '../../styles/utilities/mixins';
 @import '../../styles/base/colors';
 @import '../../styles/base/placeholders';
 @import '../../styles/base/typescale';
 
+// Local Variables
 $copyright-color: $lightGray;
 
 .global-footer {
   position: relative;
   z-index: 1;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
   line-height: 1;
   text-transform: uppercase;
 
-  .wrapper {
+  nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    @include breakpoint(large) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
-  nav {
-    flex: 1 0 auto;
+  .footer-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+
+    @include breakpoint(large) {
+      justify-content: space-between;
+      max-width: 600px;
+    }
+
+    .nav_item {
+      margin: 0 16px 7px 0;
+
+      &:last-child {
+        margin: 0 0 7px 0;
+      }
+    }
   }
 
   .copyright {
-    flex: 1 0 auto;
     color: $copyright-color;
-    text-align: right;
-  }
+    font-weight: $font-weight-bold;
+    text-align: center;
 
-  [role="navigation"] {
-    @extend %unstyled;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 600px;
-
-    a {
-      text-decoration: none;
+    @include breakpoint(large) {
+      text-align: right;
     }
   }
 }

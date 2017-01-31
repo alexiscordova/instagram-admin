@@ -1,3 +1,8 @@
+/**
+ * @module GlobalFooter
+ * Contains the global footer and footer navigation of the Instagram Admin interface
+ */
+
 import React from 'react';
 
 // Component Styles
@@ -5,40 +10,41 @@ import './style.scss';
 
 class GlobalFooter extends React.Component {
   render() {
+    const DATE = new Date().getFullYear();
+
     return (
       <footer className="global-footer">
-        <div className="wrapper">
-          <nav>
-            <ul className="small-copy" role="navigation">
-              <li>
-                <a href="https://instagram.com/about/us/">About us</a>
+        <nav className="u-wrapper">
+          <ul className="u-unstyled u-small-copy footer-navigation" role="navigation">
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/about/us/">About us</a>
               </li>
-              <li>
-                <a href="https://help.instagram.com/">Support</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://help.instagram.com/">Support</a>
               </li>
-              <li>
-                <a href="http://blog.instagram.com/">Blog</a>
+              <li className="nav_item">
+                <a className="nav_link" href="http://blog.instagram.com/">Blog</a>
               </li>
-              <li>
-                <a href="https://instagram.com/press/">Press</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/press/">Press</a>
               </li>
-              <li>
-                <a href="https://instagram.com/developer/">API</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/developer/">API</a>
               </li>
-              <li>
-                <a href="https://instagram.com/about/jobs/">Jobs</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/about/jobs/">Jobs</a>
               </li>
-              <li>
-                <a href="https://instagram.com/legal/privacy/">Privacy</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/legal/privacy/">Privacy</a>
               </li>
-              <li>
-                <a href="https://instagram.com/legal/terms/">Terms</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/legal/terms/">Terms</a>
               </li>
-              <li>
-                <a href="https://instagram.com/about/directory/">Directory</a>
+              <li className="nav_item">
+                <a className="nav_link" href="https://instagram.com/about/directory/">Directory</a>
               </li>
-              <li>
-                <a href="#">Language</a>
+              <li className="nav_item">
+                <a className="nav_link" href="#">Language</a>
               </li>
               {/*<li>
                 <span>
@@ -74,9 +80,8 @@ class GlobalFooter extends React.Component {
                 </span>
               </li>*/}
             </ul>
-          </nav>
-          <span className="copyright small-copy">© 2017 Instagram</span>
-        </div>
+          <span className="copyright u-small-copy">© {DATE} Instagram</span>
+        </nav>
       </footer>
     )
   }
