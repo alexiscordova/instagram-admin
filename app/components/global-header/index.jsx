@@ -1,22 +1,24 @@
+/**
+ * @module GlobalHeader
+ * Contains the global header and navigation of the Instagram Admin interface
+ */
+
 import React from 'react';
 
-// Component Styles
+/** Component Styles */
 import './style.scss';
 
-class GlobalHeader extends React.Component{
+class GlobalHeader extends React.Component {
   render() {
     return (
       <header className="global-header">
-        <div className="wrapper">
-          <div className="logo">
-            <a href="/">Instagram</a>
-          </div>
-          <ul role="navigation">
-            <li>
-              <a className="profile" href="/">Profile</a>
+        <nav className="u-wrapper u-centered">
+          <ul className="u-unstyled global-navigation" role="navigation">
+            <li className="nav_item">
+              <a className="nav_link" data-item="logo" href="/">Instagram</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </header>
     );
   }

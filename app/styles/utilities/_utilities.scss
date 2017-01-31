@@ -1,44 +1,87 @@
-@import '../base/placeholders';
+// Utilities
 
-.wrapper {
+@import '../base/placeholders';
+@import './mixins';
+
+.u-wrapper {
   margin: 0 auto;
-  max-width: 935px;
+  max-width: 1010px;
   width: 100%;
 }
 
 // Layout
-.inline-text {
+.u-inline-text {
   display: inline;
 }
 
-.inline {
+.u-inline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.layout-right {
+.u-layout-right {
   display: block;
   text-align: right;
 }
 
+.u-hidden {
+  display: none;
+}
+
+.u-hidden-sm {
+  display: none !important;
+  @include breakpoint(medium) {
+    display: inherit !important;
+  }
+}
+
+.u-hidden-md {
+  display: inherit !important;
+  @include breakpoint(medium) {
+    display: none !important;
+  }
+
+  @include breakpoint(large) {
+    display: inherit !important;
+  }
+}
+
+.u-hidden-lg {
+  display: inherit !important;
+  @include breakpoint(large) {
+    display: none !important;
+  }
+}
+
+.u-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // Typography
-.headline-1 {
+.u-headline-1 {
   @extend %headline-1;
 }
 
-.headline-2 {
+.u-headline-2 {
   @extend %headline-2;
 }
 
-.headline-3 {
+.u-headline-3 {
   @extend %headline-3;
 }
 
-.body-copy {
+.u-body-copy {
   @extend %body-copy;
 }
 
-.small-copy {
+.u-small-copy {
   @extend %small-copy;
+}
+
+// Lists
+.u-unstyled {
+  @extend %unstyled;
 }

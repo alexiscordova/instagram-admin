@@ -1,8 +1,11 @@
+// General Layout
+
 // Import Global Variables
 @import '../base/colors';
 @import '../base/placeholders';
 @import '../base/typescale';
 
+// Local Variables
 $background-color: $gray;
 $link-color: $blue;
 
@@ -43,15 +46,14 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   min-height: 100%;
+
+  & > * {
+    padding: 0 20px;
+  }
 }
 
 main {
   flex: 1 0 auto;
-}
-
-// Lists
-.unstyled {
-  @extend %unstyled;
 }
 
 // Links
