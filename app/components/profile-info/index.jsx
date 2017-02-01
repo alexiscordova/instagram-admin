@@ -12,7 +12,7 @@ class ProfileInfo extends React.Component {
   render() {
     return (
       <header className="profile-info">
-        <div className="u-wrapper u-pad">
+        <div className="u-wrapper">
           <div className="profile_photo">
             <img className="u-round" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150" alt="Lorem ipsum" />
           </div>

@@ -13,13 +13,13 @@ $background-color: $trueWhite;
   position: relative;
   z-index: 1;
   margin: -20px -20px 0 -20px;
-  padding: 20px;
+  padding: 20px 40px;
   background-color: $background-color;
   border-bottom: 1px solid #efefef;
 
   @include breakpoint(medium) {
     margin: 0;
-    padding: 20px 20px 40px;
+    padding: 0 0 40px;
     background-color: transparent;
   }
 
