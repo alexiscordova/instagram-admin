@@ -5,13 +5,16 @@ $font-family-sans-serif: 'proxima-nova','Helvetica Neue', Helvetica, Arial, sans
 
 // Body Copy
 $font-size-base: 14px;
+$font-size-base-responsive: 17px;
 
 // Small Copy
 $font-size-small: 12px;
 
 // Headlines
 $font-size-h1: 21px;
+$font-size-h1-responsive: 34px;
 $font-size-h2: 14px;
+$font-size-h2-responsive: 17px;
 $font-size-h3: $font-size-base;
 
 // Font Weights
@@ -21,7 +24,10 @@ $font-weight-light: 300;
 
 // Line Heights
 $line-height-h1: (21px/$font-size-h1);
+$line-height-h1-responsive: (40px/$font-size-h1-responsive);
 $line-height-h2: (17px/$font-size-h2);
+$line-height-h2-responsive: (24px/$font-size-h2-responsive);
 $line-height-h3: (24px/$font-size-h3);
 $line-height-base: (17px/$font-size-base);
+$line-height-base-responsive: (24px/$font-size-base-responsive);
 $line-height-small: 1;

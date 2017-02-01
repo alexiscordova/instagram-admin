@@ -1,3 +1,4 @@
+@import '../utilities/mixins';
 @import '../base/typescale';
 
 // Lists
@@ -16,18 +17,30 @@
   font-size: $font-size-h1;
   font-weight: $font-weight-light;
   line-height: $line-height-h1;
+
+  @include breakpoint(medium) {
+    font-size: $font-size-h1-responsive;
+    line-height: $line-height-h1-responsive;
+  }
 }
 
 %headline-2 {
   font-size: $font-size-h2;
   font-weight: $font-weight-bold;
   line-height: $line-height-h2;
+
+  @include breakpoint(medium) {
+    font-size: $font-size-h2-responsive;
+    line-height: $line-height-h2-responsive;
+  }
 }
 
 %headline-3 {
   font-size: $font-size-h3;
   font-weight: $font-weight-bold;
   line-height: $line-height-h3;
+
+  @include breakpoint(medium) {}
 }
 
 %body-copy {
@@ -35,6 +48,11 @@
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
   line-height: $line-height-h3;
+
+  @include breakpoint(medium) {
+    font-size: $font-size-base-responsive;
+    line-height: $line-height-base-responsive;
+  }
 }
 
 %small-copy {
