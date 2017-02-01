@@ -1,36 +1,42 @@
+/**
+ * @module ProfileInfo
+ * Contains the profile photo, username, and user statistics from Instagram
+ */
+
 import React from 'react';
 
-// Component Styles
+/** Component Styles */
 import './style.scss';
 
 class ProfileInfo extends React.Component {
   render() {
     return (
       <header className="profile-info">
-        <div className="profile-photo">
-          <img alt="" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150" />
-        </div>
-        <div className="profile-content">
-          <div className="profile-username">
-            <h1>username</h1>
+        <div className="u-wrapper u-pad">
+          <div className="profile_photo">
+            <img className="u-round" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150" alt="Lorem ipsum" />
           </div>
-          <div className="profile-stats">
-            <ul className="unstyled">
-              <li className="profile-posts">
-                <span className="posts-total">##</span> posts
+
+          <div className="profile_content">
+            <h1 className="profile_username">username</h1>
+
+            <ul className="u-unstyled u-body-copy profile_stats">
+              <li className="profile_posts">
+                <span className="posts_total">##</span> posts
               </li>
-              <li className="profile-followers">
-                <span className="followers-total">##</span> followers
+              <li className="profile_followers">
+                <span className="followers_total">##</span> followers
               </li>
-              <li className="profile-following">
-                <span className="following-total">##</span> following
+              <li className="profile_following">
+                <span className="following_total">##</span> following
               </li>
             </ul>
-          </div>
-          <div className="profile-bio">
-            <span className="body-copy">
-              <h3 className="profile-name inline-text">FirstName LastName</h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">website.com</a>
-            </span>
+
+            <div className="profile_bio">
+              <p className="u-body-copy">
+                <span className="profile_name u-inline-text u-headline-2">FirstName LastName</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a className="profile_link" href="#">website.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </header>

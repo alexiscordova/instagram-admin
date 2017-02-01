@@ -8,7 +8,7 @@ import './style.scss';
 class MainContent extends React.Component {
   render() {
     return (
-      <main className="wrapper">
+      <main className="u-wrapper">
         <section className="content">
           {/* Profile */}
           <ProfileInfo />

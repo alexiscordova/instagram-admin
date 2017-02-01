@@ -1,18 +1,21 @@
 // Main Content
 
 // Import Global Variables
+@import '../../styles/utilities/mixins';
 @import '../../styles/base/colors';
 @import '../../styles/base/placeholders';
 @import '../../styles/base/typescale';
 
 .content {
-  margin: 40px 0;
+  margin: 20px 0;
 
+  @include breakpoint(medium) {
+    margin: 40px 0;
+  }
   // Add spacing within MainContent direct children
   // but not the first child (as it already has margin-top applied)
   & > *:not(:first-child) {
     padding-top: 40px;
-    //padding-bottom: 20px;
   }
 }
 
