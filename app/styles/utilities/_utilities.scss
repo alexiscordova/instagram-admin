@@ -3,10 +3,12 @@
 @import '../base/placeholders';
 @import './mixins';
 
-.u-wrapper {
-  margin: 0 auto;
-  max-width: 1010px;
-  width: 100%;
+@include breakpoint(large) {
+  .u-wrapper {
+    margin: 0 auto;
+    max-width: 1010px;
+    width: 100%;
+  }
 }
 
 // Layout
@@ -23,35 +25,6 @@
 .u-layout-right {
   display: block;
   text-align: right;
-}
-
-.u-hidden {
-  display: none;
-}
-
-.u-hidden-sm {
-  display: none !important;
-  @include breakpoint(medium) {
-    display: inherit !important;
-  }
-}
-
-.u-hidden-md {
-  display: inherit !important;
-  @include breakpoint(medium) {
-    display: none !important;
-  }
-
-  @include breakpoint(large) {
-    display: inherit !important;
-  }
-}
-
-.u-hidden-lg {
-  display: inherit !important;
-  @include breakpoint(large) {
-    display: none !important;
-  }
 }
 
 .u-centered {
@@ -84,4 +57,9 @@
 // Lists
 .u-unstyled {
   @extend %unstyled;
+}
+
+// Images
+.u-round {
+  border-radius: 50%;
 }
