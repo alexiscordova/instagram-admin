@@ -1,0 +1,25 @@
+// Individual Post
+
+// Import Global Variables
+@import '../../styles/utilities/mixins';
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
+
+.post_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .post img {
+    width: 186px;
+    height: 186px;
+
+    @include breakpoint(medium) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

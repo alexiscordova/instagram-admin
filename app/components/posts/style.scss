@@ -32,24 +32,6 @@
     }
   }
 
-  .post_items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-    .post img {
-      width: 186px;
-      height: 186px;
-
-      @include breakpoint(medium) {
-        width: 200px;
-        height: 200px;
-      }
-    }
-  }
-
   .more_content {
     display: flex;
     margin-right: 20px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Post from '../post/index.jsx';
 
 // Component styles
 import './style.scss';
@@ -14,26 +15,10 @@ class Posts extends React.Component {
           </span>
         </header>
         <ul className="u-unstyled post_items">
-          <li className="post">
-            <a className="post_link" href="#">
-              <img className="post_img" src="https://placeholdit.imgix.net/~text?txtsize=23&txt=200%C3%97200&w=200&h=200" />
-            </a>
-          </li>
-          <li className="post">
-            <a className="post_link" href="#">
-              <img className="post_img" src="https://placeholdit.imgix.net/~text?txtsize=23&txt=200%C3%97200&w=200&h=200" />
-            </a>
-          </li>
-          <li className="post">
-            <a className="post_link" href="#">
-              <img className="post_img" src="https://placeholdit.imgix.net/~text?txtsize=23&txt=200%C3%97200&w=200&h=200" />
-            </a>
-          </li>
-          <li className="post">
-            <a className="post_link" href="#">
-              <img className="post_img" src="https://placeholdit.imgix.net/~text?txtsize=23&txt=200%C3%97200&w=200&h=200" />
-            </a>
-          </li>
+          <Post />
+          <Post />
+          <Post />
+          <Post />
         </ul>
         <span className="more_content">
           <a className="more_link" href="#">See more</a>
