@@ -5,27 +5,3 @@
 @import '../../styles/base/colors';
 @import '../../styles/base/placeholders';
 @import '../../styles/base/typescale';
-
-.content {
-  margin: 20px 0;
-
-  @include breakpoint(medium) {
-    margin: 40px 0;
-  }
-  // Add spacing within MainContent direct children
-  // but not the first child (as it already has margin-top applied)
-  & > *:not(:first-child) {
-    padding-top: 40px;
-  }
-}
-
-// Posts
-.posts {
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
-
-  .post-items {
-    margin: 10px 0;
-  }
-}

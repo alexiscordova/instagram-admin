@@ -1,0 +1,81 @@
+// Posts
+
+// Import Global Variables
+@import '../../styles/utilities/mixins';
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
+
+.posts {
+  padding-bottom: 20px;
+  background-color: $trueWhite;
+
+  @include breakpoint(medium) {
+    background-color: transparent;
+  }
+
+  & + & {
+    padding-top: 10px;
+    border-top: 1px solid #efefef;
+  }
+
+  header {
+    padding: 20px;
+
+    @include breakpoint(medium) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .post_title {
+      text-transform: uppercase;
+    }
+  }
+
+  .post_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .post img {
+      width: 186px;
+      height: 186px;
+
+      @include breakpoint(medium) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .more_content {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+
+    @include breakpoint(medium) {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .more_link {
+      flex: 1 0 auto;
+      padding: 10px 9px 7px;
+      color: $trueWhite;
+      background-color: #3897f0;
+
+      @include breakpoint(medium) {
+        padding: 0;
+        color: $trueBlack;
+        text-align: right;
+        background-color: transparent;
+      }
+    }
+  }
+}
