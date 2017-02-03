@@ -8,7 +8,7 @@ class Posts extends React.Component {
     return (
       <section className="posts">
         <header className="u-inline">
-          <h2 className="post_title">Posts</h2>
+          <h2 className="post_title">{this.props.title}</h2>
           <span>
             <a className="u-small-text" href="#">Download all…</a>
           </span>
@@ -41,6 +41,14 @@ class Posts extends React.Component {
       </section>
     )
   }
+};
+
+Posts.propTypes = {
+  title: React.PropTypes.string
+};
+
+Posts.defaultProps = {
+  title: 'Posts'
 };
 
 export default Posts;

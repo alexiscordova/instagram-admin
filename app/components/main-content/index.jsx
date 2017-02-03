@@ -13,7 +13,7 @@ class MainContent extends React.Component {
         <section className="content">
           <ProfileInfo />
           <Posts />
-          <Posts />
+          <Posts title="Liked" />
         </section>
       </main>
     )
