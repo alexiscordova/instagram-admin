@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from '../post/index.jsx';
+import MoreContent from '../more-content/index.jsx';
 
 // Component styles
 import './style.scss';
@@ -20,9 +21,7 @@ class Posts extends React.Component {
           <Post />
           <Post />
         </ul>
-        <span className="more_content">
-          <a className="more_link" href="#">See more</a>
-        </span>
+        <MoreContent />
       </section>
     )
   }

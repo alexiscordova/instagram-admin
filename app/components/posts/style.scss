@@ -31,33 +31,4 @@
       text-transform: uppercase;
     }
   }
-
-  .more_content {
-    display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: center;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-
-    @include breakpoint(medium) {
-      margin: 0;
-      border: none;
-      border-radius: 0;
-    }
-
-    .more_link {
-      flex: 1 0 auto;
-      padding: 10px 9px 7px;
-      color: $trueWhite;
-      background-color: #3897f0;
-
-      @include breakpoint(medium) {
-        padding: 0;
-        color: $trueBlack;
-        text-align: right;
-        background-color: transparent;
-      }
-    }
-  }
 }
