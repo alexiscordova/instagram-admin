@@ -46,14 +46,11 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   min-height: 100%;
-
-  // & > * {
-  //   padding: 0 20px;
-  // }
 }
 
 main {
   flex: 1 0 auto;
+  margin-bottom: 20px;
 }
 
 // Links
