@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { Link } from 'react-router';
 
 /** Component Styles */
 import './style.scss';
@@ -15,7 +16,7 @@ class GlobalHeader extends React.Component {
         <nav className="u-wrapper u-centered">
           <ul className="u-unstyled global-navigation" role="navigation">
             <li className="nav_item">
-              <a className="nav_link" data-item="logo" href="/">Instagram</a>
+              <Link className="nav_link" data-item="logo" to="/">Instagram</Link>
             </li>
           </ul>
         </nav>
