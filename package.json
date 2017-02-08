@@ -12,7 +12,10 @@
     "build": "webpack --optimize-minimize"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Alexis Córdova",
+    "email": "acordova@mac.com"
+  },
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^5.0.0",
