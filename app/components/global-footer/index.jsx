@@ -10,7 +10,7 @@ import './style.scss';
 
 class GlobalFooter extends React.Component {
   render() {
-    const DATE = new Date().getFullYear();
+    const YEAR = new Date().getFullYear();
 
     return (
       <footer className="global-footer">
@@ -80,7 +80,7 @@ class GlobalFooter extends React.Component {
                 </span>
               </li>*/}
             </ul>
-          <span className="copyright u-small-copy">© {DATE} Instagram</span>
+          <span className="copyright u-small-copy">© { YEAR } Instagram</span>
         </nav>
       </footer>
     )

@@ -16,6 +16,10 @@ $copyright-color: $lightGray;
   line-height: 1;
   text-transform: uppercase;
 
+  @include breakpoint(large) {
+    margin-bottom: 40px;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -23,7 +27,6 @@ $copyright-color: $lightGray;
 
     @include breakpoint(large) {
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
     }
   }
@@ -39,6 +42,7 @@ $copyright-color: $lightGray;
 
     @include breakpoint(large) {
       justify-content: space-between;
+      margin: 0;
       max-width: 600px;
     }
 
