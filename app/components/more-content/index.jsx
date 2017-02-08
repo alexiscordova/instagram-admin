@@ -1,3 +1,4 @@
+// Vendor Libraries
 import React from 'react';
 
 // Component styles
@@ -7,7 +8,7 @@ class MoreContent extends React.Component {
   render() {
     return (
       <span className="more_content">
-        <a className="more_link" href="#">{this.props.text}</a>
+        <a className="more_link" href="#">{ this.props.text }</a>
       </span>
     );
   }
@@ -18,7 +19,7 @@ MoreContent.propTypes = {
 };
 
 MoreContent.defaultProps = {
-  title: 'See more'
+  text: 'See more'
 };
 
 export default MoreContent;
