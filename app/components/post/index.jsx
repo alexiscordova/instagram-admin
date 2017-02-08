@@ -8,7 +8,7 @@ class Post extends React.Component {
     return (
       <li className="post">
         <a className="post_link" href="#">
-          <img className="post_img" src="https://placeholdit.imgix.net/~text?txtsize=23&txt=200%C3%97200&w=200&h=200" />
+          <img className="post_img u-resp" src="https://placeholdit.imgix.net/~text?txtsize=88&txt=IMG&w=350&h=350&txttrack=0" />
         </a>
       </li>
     );

@@ -13,13 +13,18 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
-  .post img {
-    width: 186px;
-    height: 186px;
+  .post {
+    margin: 1px 0;
+    flex-basis: calc((100% / 2) - 1px);
 
     @include breakpoint(medium) {
-      width: 200px;
-      height: 200px;
+      margin: 1px;
+      flex-basis: calc((100% / 4) - 2px);
+    }
+
+    @include breakpoint(large) {
+      margin: 0;
+      flex-basis: 200px;
     }
   }
 }

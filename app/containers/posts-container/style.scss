@@ -1,0 +1,30 @@
+// Post Container
+
+// Import Global Variables
+@import '../../styles/utilities/mixins';
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
+
+.post-container {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0 40px;
+
+  .post_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .post {
+      margin: 1px 0;
+      width: calc((100% / 3) - 1px);
+
+      @include breakpoint(large) {
+        margin: 15px 0;
+        flex-basis: 293px;
+      }
+    }
+  }
+}

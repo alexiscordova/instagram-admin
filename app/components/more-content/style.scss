@@ -15,9 +15,12 @@
   border-radius: 3px;
 
   @include breakpoint(medium) {
-    margin: 0;
     border: none;
     border-radius: 0;
+  }
+
+  @include breakpoint(large) {
+    margin: 0;
   }
 
   .more_link {
