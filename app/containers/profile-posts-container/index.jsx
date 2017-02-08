@@ -21,18 +21,20 @@ class Posts extends React.Component {
           <Post />
           <Post />
         </ul>
-        <MoreContent />
+        <MoreContent path={ this.props.path }/>
       </section>
     )
   }
 };
 
 Posts.propTypes = {
-  title: React.PropTypes.string
+  title: React.PropTypes.string,
+  path: React.PropTypes.string
 };
 
 Posts.defaultProps = {
-  title: 'Posts'
+  title: 'Posts',
+  path: '/posts'
 };
 
 export default Posts;

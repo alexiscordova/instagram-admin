@@ -12,7 +12,7 @@ class ProfileView extends React.Component {
       <section className="content">
         <ProfileInfoContainer />
         <ProfilePostsContainer />
-        <ProfilePostsContainer title="Liked" />
+        <ProfilePostsContainer title="Liked" path="/liked" />
       </section>
     )
   }
