@@ -10,7 +10,7 @@ import Post from '../../components/post/index.jsx';
 class PostsContainer extends React.Component {
   render() {
     return (
-      <div className="post-container">
+      <div className="posts-container">
         <ul className="u-unstyled post_grid">
           <Post />
           <Post />
