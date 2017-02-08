@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git@github.com:alexiscordova/instagram-admin.git"
   },
-  "main": "./app/app.jsx",
+  "main": "./app/index.jsx",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
     "build": "webpack --optimize-minimize"
