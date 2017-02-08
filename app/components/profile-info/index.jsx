@@ -1,14 +1,14 @@
-/**
- * @module ProfileInfo
- * Contains the profile photo, username, and user statistics from Instagram
- */
-
+// Vendor Libraries
 import React from 'react';
 
-/** Component Styles */
+// Component Styles
 import './style.scss';
 
 class ProfileInfo extends React.Component {
+  componentDidMount() {
+    document.title = '{name} {@username} • Instagram photos and videos';
+  }
+
   render() {
     return (
       <header className="profile-info">
