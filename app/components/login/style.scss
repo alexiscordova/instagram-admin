@@ -1,0 +1,63 @@
+// Login Component
+
+// Global Variables
+@import '../../styles/utilities/mixins';
+@import '../../styles/base/colors';
+@import '../../styles/base/placeholders';
+@import '../../styles/base/typescale';
+
+// Local Variables
+$background-color: $trueWhite;
+$text-color: $trueWhite;
+$border-color: $trueBlack;
+
+.login {
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  margin-top: -150px;
+  padding-top: 70px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid rgba($border-color, 0.0975);
+  background-color: $background-color;
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    width: 175px;
+    height: 51px;
+    background-image: url('/app/assets/sprite.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  .login_button {
+    -webkit-appearance: none;
+    position: relative;
+    z-index: 1;
+    padding: 13px 12px 12px 46px;
+    color: $text-color;
+    border-radius: 4px;
+    border: 1px solid rgba($border-color, 0.0975);
+    box-shadow: 0 1px 4px rgba($trueBlack, 0.85);
+    background-color: #3f729b;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 5px;
+      margin-top: -15px;
+      width: 29px;
+      height: 29px;
+      background-image: url('/app/assets/sprite.png');
+      background-position: -215px -180px;
+      background-repeat: no-repeat;
+      content: '';
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

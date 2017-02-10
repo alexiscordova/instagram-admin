@@ -6,6 +6,7 @@ import { Router, Route, browserHistory } from 'react-router';
 import AppView from './views/app-view/index.jsx';
 import ProfileView from './views/profile-view/index.jsx';
 import PostsView from './views/posts-view/index.jsx';
+import LoginView from './views/login-view/index.jsx';
 
 // Routes
 const routes = (
