@@ -3,6 +3,10 @@
 @import '../base/placeholders';
 @import './mixins';
 
+.u-wrapper {
+  display: flex;
+}
+
 @include breakpoint(large) {
   .u-wrapper {
     margin: 0 auto;
@@ -32,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 // Typography
