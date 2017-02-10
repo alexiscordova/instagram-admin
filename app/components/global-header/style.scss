@@ -1,20 +1,20 @@
 // Global Header and Navigation
 
-// Import Global Variables
+// Global Variables
 @import '../../styles/base/colors';
 @import '../../styles/base/placeholders';
 @import '../../styles/utilities/mixins';
 
 // Local Component Variables
-$backgroundColor: $trueWhite;
-$borderColor: $trueBlack;
+$background-color: $trueWhite;
+$border-color: $trueBlack;
 
 .global-header {
   position: relative;
   z-index: 1;
   height: 77px;
-  background-color: $backgroundColor;
-  border-bottom: 1px solid rgba($borderColor, 0.0975);
+  background-color: $background-color;
+  border-bottom: 1px solid rgba($border-color, 0.0975);
 
   nav {
     flex-direction: row;
