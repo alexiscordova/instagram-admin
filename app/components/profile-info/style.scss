@@ -76,7 +76,7 @@ $background-color: $trueWhite;
       max-width: 50%;
     }
 
-    .posts_total {
+    [class$='total'] {
       font-weight: $font-weight-bold;
     }
   }
