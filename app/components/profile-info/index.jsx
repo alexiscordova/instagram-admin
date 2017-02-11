@@ -5,36 +5,42 @@ import React from 'react';
 import './style.scss';
 
 class ProfileInfo extends React.Component {
-  componentDidMount() {
-    document.title = '{name} {@username} • Instagram photos and videos';
+  constructor(props) {
+    super(props);
+
+    document.title = 'Instagram';
   }
 
   render() {
+    let profileData = this.props.data;
+
+    document.title = `${profileData.full_name} (@${profileData.username}) • Instagram photos and videos`;
+
     return (
       <header className="profile-info">
         <div className="u-wrapper">
           <div className="profile_photo">
-            <img className="u-round" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150" alt="Lorem ipsum" />
+            <img className="u-round" src={profileData.profile_picture} alt={profileData.full_name} />
           </div>
 
           <div className="profile_content">
-            <h1 className="profile_username">username</h1>
+            <h1 className="profile_username">{profileData.username}</h1>
 
             <ul className="u-unstyled u-body-copy profile_stats">
               <li className="profile_posts">
-                <span className="posts_total">##</span> posts
+                <span className="posts_total">{profileData.counts.media}</span> posts
               </li>
               <li className="profile_followers">
-                <span className="followers_total">##</span> followers
+                <span className="followers_total">{profileData.counts.followed_by}</span> followers
               </li>
               <li className="profile_following">
-                <span className="following_total">##</span> following
+                <span className="following_total">{profileData.counts.follows}</span> following
               </li>
             </ul>
 
             <div className="profile_bio">
               <p className="u-body-copy">
-                <span className="profile_name u-inline-text u-headline-2">FirstName LastName</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a className="profile_link" href="#">website.com</a>
+                <span className="profile_name u-inline-text u-headline-2">{profileData.full_name}</span> {profileData.bio} <a className="profile_link" href={profileData.website}>{profileData.website}</a>
               </p>
             </div>
           </div>
@@ -42,6 +48,15 @@ class ProfileInfo extends React.Component {
       </header>
     );
   }
+};
+
+ProfileInfo.propTypes = {
+  full_name: React.PropTypes.string,
+  username: React.PropTypes.string,
+  profile_picture: React.PropTypes.string,
+  counts: React.PropTypes.objectOf(React.PropTypes.number),
+  bio: React.PropTypes.string,
+  website: React.PropTypes.string
 };
 
 export default ProfileInfo;
