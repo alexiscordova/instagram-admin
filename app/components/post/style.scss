@@ -6,7 +6,8 @@
 @import '../../styles/base/placeholders';
 @import '../../styles/base/typescale';
 
-.post_items {
+.post_items,
+.post_grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,17 +15,90 @@
   margin-bottom: 20px;
 
   .post {
+    position: relative;
+    z-index: 1;
     margin: 1px 0;
-    flex-basis: calc((100% / 2) - 1px);
+    overflow: hidden;
+
+    &.video:before {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      right: 10px;
+      width: 21px;
+      height: 15px;
+      background-image: url('/app/assets/sprite.png');
+      background-position: -187px -187px;
+      background-repeat: no-repeat;
+      content: '';
+
+      @include breakpoint(large) {
+        width: 32px;
+        height: 23px;
+        background-position: -8px -241px;
+      }
+    }
+  }
+
+  .post_link {
+    display: block;
+  }
+
+  .post_img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+// Profile Posts
+.post_items {
+  .post {
+    width: calc((100% / 2) - 1px);
 
     @include breakpoint(medium) {
       margin: 1px;
-      flex-basis: calc((100% / 4) - 2px);
+      width: calc((100% / 4) - 2px);
     }
 
     @include breakpoint(large) {
-      margin: 0;
       flex-basis: 200px;
+    }
+  }
+
+  .post_img {
+    height: 185px;
+
+    @include breakpoint(medium) {
+      height: 190px;
+    }
+
+    @include breakpoint(large) {
+      height: 200px;
+    }
+  }
+}
+
+// All Posts
+.post_grid {
+  .post {
+    width: calc((100% / 3) - 1px);
+
+    @include breakpoint(large) {
+      margin: 15px 0;
+      flex-basis: 295px;
+    }
+  }
+
+  .post_img {
+    height: 123px;
+
+    @include breakpoint(medium) {
+      height: 215px;
+    }
+
+    @include breakpoint(large) {
+      height: 295px;
     }
   }
 }
