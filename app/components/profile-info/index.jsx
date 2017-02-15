@@ -7,14 +7,15 @@ import './style.scss';
 class ProfileInfo extends React.Component {
   constructor(props) {
     super(props);
-
-    document.title = 'Instagram';
   }
 
   render() {
     let profileData = this.props.data;
+    let isDataLoaded = profileData.id && typeof profileData.id !== 'undefined';
 
-    document.title = `${profileData.full_name} (@${profileData.username}) • Instagram photos and videos`;
+    if (isDataLoaded) {
+      document.title = `${profileData.full_name} (@${profileData.username}) • Instagram photos and videos`;
+    }
 
     return (
       <header className="profile-info">
