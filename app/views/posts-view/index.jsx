@@ -10,7 +10,7 @@ class PostsView extends React.Component {
     return (
       <section className="content">
         <ProfileInfoContainer />
-        <PostsContainer />
+        <PostsContainer endpoint="media" />
       </section>
     );
   }

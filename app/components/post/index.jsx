@@ -4,11 +4,18 @@ import React from 'react';
 import './style.scss';
 
 class Post extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    let postData = this.props.data;
+    let classNames = (postData.type === 'video') ? 'post video' : 'post';
+
     return (
-      <li className="post">
-        <a className="post_link" href="#">
-          <img className="post_img u-resp" src="https://placeholdit.imgix.net/~text?txtsize=88&txt=IMG&w=350&h=350&txttrack=0" />
+      <li className={classNames} id={postData.id}>
+        <a className="post_link" href={postData.link}>
+          <img className="post_img u-resp" src={postData.images.standard_resolution.url} />
         </a>
       </li>
     );
