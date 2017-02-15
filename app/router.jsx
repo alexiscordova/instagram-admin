@@ -27,12 +27,12 @@ function isLoggedIn() {
 
     // Return
     return true;
-  } else if (typeof window.localStorage.token != 'undefined') {
+  } else if (typeof window.localStorage.token !== 'undefined') {
     let tokenExpirationTime = JSON.parse(window.localStorage.token).expiration,
       currentTime = new Date().getTime();
 
     // Check if token in localStorage is still valid
-    return (tokenExpirationTime > currentTime) ? true : false
+    return (tokenExpirationTime > currentTime) ? false : true
   } else {
     return false;
   }
