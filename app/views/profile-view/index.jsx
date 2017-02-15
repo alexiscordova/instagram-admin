@@ -8,8 +8,8 @@ class ProfileView extends React.Component {
     return (
       <section className="content">
         <ProfileInfoContainer />
-        <ProfilePostsContainer />
-        <ProfilePostsContainer title="Liked" path="/liked" />
+        <ProfilePostsContainer endpoint="media" />
+        {/*}<ProfilePostsContainer endpoint="liked" title="Liked" path="/liked" />*/}
       </section>
     )
   }
