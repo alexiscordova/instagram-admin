@@ -48,12 +48,13 @@ function requireAuth(nextState, replace) {
 
 // Routes
 const routes = (
-  <Router history={ browserHistory }>
-    <Route component={ AppView }>
-      <Route path="/" component={ ProfileView } onEnter={ requireAuth } />
-      <Route path="/posts" component={ PostsView } onEnter={ requireAuth } />
-      {/*}<Route path="/liked" component={ PostsView } onEnter={ requireAuth } />*/}
-      <Route path="/login" component={ LoginView } contentClass="u-centered" />
+  <Router history={browserHistory}>
+    <Route component={AppView}>
+      <Route path="/" component={ProfileView} onEnter={requireAuth} />
+      <Route path="/posts" component={PostsView} onEnter={requireAuth} />
+      {/*}<Route path="/liked" component={PostsView} onEnter={requireAuth} />*/}
+      <Route path="/login" component={LoginView} contentClass="u-centered" />
+      <Route path="*" component={ProfileView} onEnter={requireAuth} />
     </Route>
   </Router>
 );
